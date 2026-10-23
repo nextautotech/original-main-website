@@ -1,0 +1,1 @@
+CREATE POLICY "Only trusted server can manage enquiries" ON public.enquiries FOR ALL TO service_role USING (true) WITH CHECK (true);

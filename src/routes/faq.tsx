@@ -1,0 +1,4 @@
+import { createFileRoute } from '@tanstack/react-router';
+import { FAQ } from '@/components/Editorial';
+import { ContactBand } from '@/components/Sections';
+export const Route=createFileRoute('/faq')({head:()=>({meta:[{title:'Frequently Asked Questions | Next Autotech'},{name:'description',content:'Answers about Next Autotech services, supported integrations, enquiries and demos.'},{property:'og:title',content:'Frequently Asked Questions | Next Autotech'},{property:'og:description',content:'Find answers about Next Autotech automation services.'},{property:'og:type',content:'website'},{name:'twitter:card',content:'summary'}]}),component:()=> <main><section className="page-intro"><div className="shell"><span className="eyebrow">RESOURCES</span><h1>Good questions, <em>clear answers.</em></h1><p>Explore common questions about connected business automation.</p></div></section><FAQ/><ContactBand/></main>});

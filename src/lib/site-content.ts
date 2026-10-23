@@ -1,0 +1,25 @@
+export const features = [
+ ['AI-Powered Chatbots','Answer common customer questions and guide conversations automatically.','whatsapp-business-api'],
+ ['Automated Customer Communication','Keep replies and updates moving across supported messaging channels.','whatsapp-business-api'],
+ ['Lead Capture & Management','Collect enquiries and keep customer follow-ups organized.','whatsapp-business-api'],
+ ['CRM Integration','Connect customer conversations with supported lead workflows.','whatsapp-business-api'],
+ ['Automated Follow-Ups','Stay in touch after an enquiry, booking or order.','whatsapp-business-api'],
+ ['Team Inbox & Customer Support','Bring customer conversations into a manageable workflow.','whatsapp-business-api'],
+ ['Campaign Management','Reach customers with relevant approved message campaigns.','whatsapp-business-api'],
+ ['Appointment Scheduling','Let customers book and receive confirmations and reminders.','calendar-bookings'],
+ ['Customer Engagement Analytics','Review activity to understand and improve your workflows.','whatsapp-business-api'],
+ ['Workflow Automation','Connect customer touchpoints to routine business actions.','whatsapp-business-api'],
+ ['E-commerce Automation','Connect store events with shopping conversations.','shopify-store-automation'],
+ ['Business Process Automation','Reduce manual work between messaging and accounting tools.','tally-accounting-automation'],
+] as const;
+export const faqs = [
+ ['What is Next Autotech?','Next Autotech helps businesses connect customer communication and operational workflows across supported channels and tools.'],
+ ['What services does Next Autotech offer?','Our services cover WhatsApp Business API, Instagram, Messenger, calendar bookings, RCS, WhatsApp commerce, Google reviews, Tally and Shopify automation.'],
+ ['How does WhatsApp Business API automation work?','Approved messaging, chatbots and workflows help your team handle enquiries, updates and follow-ups through WhatsApp. The setup depends on your business needs and platform approvals.'],
+ ['Can I automate Instagram and Facebook Messenger?','Yes. We offer separate automation services for Instagram DMs and Facebook Messenger conversations. Available actions depend on platform permissions.'],
+ ['Can Next Autotech help manage customer leads?','Yes. Connected workflows can capture enquiries and help your team organize and follow up with leads.'],
+ ['Can I connect my Shopify store?','Our Shopify automation connects supported store events to customer communication workflows, including order updates and reminders.'],
+ ['Does Next Autotech support accounting automation?','Yes. Tally accounting automation can connect supported accounting updates to customer communication workflows.'],
+ ['How can I book a demo?','Send an enquiry through our Contact Us page, and the team can discuss a demo with you.'],
+ ['How can I contact the Next Autotech team?','Use the contact form, email admin@nextautotech.in or call 63786 10058.'],
+] as const;
