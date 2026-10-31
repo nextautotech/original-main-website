@@ -274,3 +274,10 @@ h1 em,h2 em { font-style:normal; background:var(--gradient-action); color:transp
 @media(max-width:1050px){ .directory-controls { flex-direction:column; align-items:stretch; }.directory-search { width:100%; }.integration-cta-inner { align-items:start; flex-direction:column; }.real-estate-integration-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
 @media(max-width:760px){ .integration-hero-layout { display:flex; flex-direction:column; gap:0; }.integration-hero-copy { padding:60px 0 0; }.integration-hero-copy h2 { font-size:20px; }.integration-hub { width:min(100%,420px); }.lead-integration-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }.lead-card-body { padding:17px; }.integration-detail-layout { grid-template-columns:1fr; gap:32px; }.integration-detail .integration-art { height:270px; }.workflow-rail { display:grid; grid-template-columns:1fr; }.workflow-arrow { transform:rotate(90deg); justify-self:center; }.real-benefit-grid { grid-template-columns:repeat(2,1fr); }.real-estate-integration-grid { grid-template-columns:1fr 1fr; } }
 @media(max-width:540px){ .directory-heading { align-items:start; flex-direction:column; }.lead-integration-grid,.real-estate-integration-grid { grid-template-columns:1fr; }.integration-art { height:205px; }.lead-card-body { min-height:0; }.integration-cta-actions { flex-direction:column; align-items:stretch; width:100%; }.category-filters button { flex:1; }.integration-detail .integration-art { height:220px; }.real-benefit-grid article { padding:16px; }.real-benefit-grid h3 { font-size:14px; } }
+
+
+/* Updated square brand mark */
+.logo-link { gap:0; }
+.logo-link img { width:62px; height:62px; border-radius:10px; object-fit:contain; }
+@media(max-width:760px) { .logo-link img { width:50px; height:50px; } }
+
