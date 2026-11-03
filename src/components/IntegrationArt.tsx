@@ -1,11 +1,11 @@
-import { SiFacebook, SiGoogleforms, SiTypeform, SiZoho, SiHubspot } from 'react-icons/si';
+import { SiFacebook, SiMeta, SiGoogleforms, SiTypeform, SiZoho, SiHubspot } from 'react-icons/si';
 import { BookUser, FileText, GitBranch, PhoneCall, ScanText, Send, Database, UserRound, Check, PanelsTopLeft, Building2, ListFilter } from 'lucide-react';
 import type { leadIntegrations } from '@/lib/catalogue';
 
 type Entry = (typeof leadIntegrations)[number];
-const icons = {facebook:SiFacebook,webhook:GitBranch,googleforms:SiGoogleforms,jotform:PanelsTopLeft,typeform:SiTypeform,zoho:SiZoho,hubspot:SiHubspot,indiamart:Building2,contactform:FileText,calls:PhoneCall,contacts:BookUser,ocr:ScanText};
+const icons = {facebook:SiFacebook,meta:SiMeta,webhook:GitBranch,googleforms:SiGoogleforms,jotform:PanelsTopLeft,typeform:SiTypeform,zoho:SiZoho,hubspot:SiHubspot,indiamart:Building2,contactform:FileText,calls:PhoneCall,contacts:BookUser,ocr:ScanText};
 const labels:Record<Entry['visual'],[string,string,string]> = {
- facebook:['New lead','Property inquiry','Lead received'], webhook:['POST /leads','200 OK','Event delivered'], googleforms:['New response','Full name','Submitted'], jotform:['Contact form','Your details','Form received'], typeform:['Question 01','Tell us about you','Answer saved'], zoho:['Lead pipeline','New prospect','Qualified'], hubspot:['Contacts','New contact','In pipeline'], indiamart:['Buyer enquiry','Product request','New lead'], contactform:['Website enquiry','Email address','Message sent'], calls:['Recent calls','Inbound enquiry','Add contact'], contacts:['Address book','New contact','Saved'], ocr:['Scan document','Extract fields','Text detected']
+ facebook:['New lead','Property inquiry','Lead received'], meta:['New Meta lead','Property inquiry','Lead received'], webhook:['POST /leads','200 OK','Event delivered'], googleforms:['New response','Full name','Submitted'], jotform:['Contact form','Your details','Form received'], typeform:['Question 01','Tell us about you','Answer saved'], zoho:['Lead pipeline','New prospect','Qualified'], hubspot:['Contacts','New contact','In pipeline'], indiamart:['Buyer enquiry','Product request','New lead'], contactform:['Website enquiry','Email address','Message sent'], calls:['Recent calls','Inbound enquiry','Add contact'], contacts:['Address book','New contact','Saved'], ocr:['Scan document','Extract fields','Text detected']
 };
 export function IntegrationArt({item,compact=false}:{item:Entry;compact?:boolean}){
  const Icon=icons[item.visual]; const [top,mid,bottom]=labels[item.visual];

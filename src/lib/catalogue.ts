@@ -47,7 +47,7 @@ export const industryUseCases = [
 export const integrations = [
  {name:'WhatsApp Business API',brand:'whatsapp',slug:'whatsapp-business-api',description:'Connect customer conversations with sales, support and automation workflows.'},
  {name:'Instagram',brand:'instagram',slug:'instagram-automation',description:'Turn DMs and comments into timely customer conversations.'},
- {name:'Facebook Messenger',brand:'messenger',slug:'facebook-messenger-automation',description:'Respond to Facebook enquiries and manage conversations.'},
+ {name:'Meta Ads',brand:'meta',slug:'facebook-lead-ads',description:'Capture leads from Meta Ads and bring them into your customer follow-up workflow.'},
  {name:'Google Reviews',brand:'google',slug:'ai-google-reviews',description:'Make review requests part of your customer follow-up.'},
  {name:'Shopify',brand:'shopify',slug:'shopify-store-automation',description:'Connect store events with customer updates and reminders.'},
  {name:'Tally',brand:'tally',slug:'tally-accounting-automation',description:'Share accounting updates through connected workflows.'},
@@ -58,7 +58,7 @@ export const integrations = [
 
 // These are discovery entries, not claims of live one-click connections.
 export const leadIntegrations = [
- {slug:'facebook-lead-ads',name:'Facebook Lead Ads',category:'Lead Generation',description:'Capture leads directly from Facebook Lead Ads.',visual:'facebook',documentation:'https://developers.facebook.com/docs/marketing-api/guides/lead-ads/'},
+ {slug:'facebook-lead-ads',name:'Meta Ads',category:'Lead Generation',description:'Capture leads directly from Meta Ads.',visual:'meta',documentation:'https://developers.facebook.com/docs/marketing-api/guides/lead-ads/'},
  {slug:'webhook',name:'Webhook',category:'Data Capture',description:'Receive leads and business data through custom webhook connections.',visual:'webhook',documentation:undefined},
  {slug:'google-forms',name:'Google Forms',category:'Forms & Surveys',description:'Sync form submissions and capture leads from Google Forms.',visual:'googleforms',documentation:'https://developers.google.com/workspace/forms/api/guides'},
  {slug:'jotform',name:'Jotform',category:'Forms & Surveys',description:'Capture and organize leads from Jotform submissions.',visual:'jotform',documentation:'https://api.jotform.com/docs/'},
@@ -71,3 +71,5 @@ export const leadIntegrations = [
  {slug:'contact-book',name:'Contact Book',category:'Business Tools',description:'Import contacts from your phone contact book.',visual:'contacts',documentation:undefined},
  {slug:'ocr-app',name:'OCR App',category:'Business Tools',description:'Extract lead information from supported images and documents using OCR.',visual:'ocr',documentation:undefined},
 ] as const;
+
+

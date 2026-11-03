@@ -281,3 +281,27 @@ h1 em,h2 em { font-style:normal; background:var(--gradient-action); color:transp
 .logo-link img { width:62px; height:62px; border-radius:10px; object-fit:contain; }
 @media(max-width:760px) { .logo-link img { width:50px; height:50px; } }
 
+
+/* Capability cards respond to hover and keyboard focus. */
+.capability-item { position:relative; transition:transform .22s ease, box-shadow .22s ease, background-color .22s ease; }
+.capability-item > svg { transition:transform .22s ease, color .22s ease; }
+@media (hover:hover) and (pointer:fine) {
+  .capability-item:hover { z-index:1; transform:translateY(-4px); background:var(--surface-blue); box-shadow:0 14px 28px -18px oklch(0.35 0.1 250 / 42%); }
+  .capability-item:hover > svg { transform:translateY(-2px); color:var(--cyan); }
+}
+.capability-item:focus-within { z-index:1; background:var(--surface-blue); box-shadow:inset 0 0 0 2px var(--cyan); }
+@media (prefers-reduced-motion:reduce) { .capability-item,.capability-item > svg { transition:none; } .capability-item:hover { transform:none; } .capability-item:hover > svg { transform:none; } }
+
+
+/* Integration cards share the same hover and keyboard feedback. */
+.integration-item { position:relative; transition:transform .22s ease, box-shadow .22s ease, background-color .22s ease; }
+.integration-item > .brand-meta { color:#0866ff; }
+.integration-item > .brand-tally { object-fit:contain; }
+@media (hover:hover) and (pointer:fine) { .integration-item:hover { z-index:1; transform:translateY(-4px); background:var(--surface-blue); box-shadow:0 14px 28px -18px oklch(0.35 0.1 250 / 42%); } .integration-item:hover > .brand-icon { transform:translateY(-2px) scale(1.06); } }
+.integration-item:focus-within { z-index:1; background:var(--surface-blue); box-shadow:inset 0 0 0 2px var(--cyan); }
+@media (prefers-reduced-motion:reduce) { .integration-item,.integration-item > .brand-icon { transition:none; } .integration-item:hover,.integration-item:hover > .brand-icon { transform:none; } }
+
+/* Soft brand color inside the homepage use case cards. */
+.usecase-section .usecase-grid article { background:linear-gradient(135deg, oklch(0.985 0.018 225), oklch(0.95 0.045 235)); border-color:oklch(0.86 0.045 235); box-shadow:0 8px 22px -20px oklch(0.35 0.1 250 / 45%); }
+.usecase-section .usecase-grid article:nth-child(2) { background:linear-gradient(135deg, oklch(0.985 0.018 230), oklch(0.95 0.04 220)); }
+.usecase-section .usecase-grid article:nth-child(3) { background:linear-gradient(135deg, oklch(0.985 0.018 245), oklch(0.95 0.04 250)); }
