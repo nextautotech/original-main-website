@@ -2,7 +2,7 @@
 import { createServerFn } from '@tanstack/react-start';
 import { z } from 'zod';
 
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzKAwny94KgLiJpgALke-zPSVerzX4pP_wxepq0fX1ICyFQTSEtw0zbW_xI1wcbMs28/exec';
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyma7xAY193tcPsHP_gTUNN-2aY2_K1XrT9cGkr56HyFh6CACPd0HfMEgjqcDCxZTWY/exec';
 
 const schema = z.object({
   name: z.string().trim().min(2).max(100),
