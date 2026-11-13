@@ -305,3 +305,9 @@ h1 em,h2 em { font-style:normal; background:var(--gradient-action); color:transp
 .usecase-section .usecase-grid article { background:linear-gradient(135deg, oklch(0.985 0.018 225), oklch(0.95 0.045 235)); border-color:oklch(0.86 0.045 235); box-shadow:0 8px 22px -20px oklch(0.35 0.1 250 / 45%); }
 .usecase-section .usecase-grid article:nth-child(2) { background:linear-gradient(135deg, oklch(0.985 0.018 230), oklch(0.95 0.04 220)); }
 .usecase-section .usecase-grid article:nth-child(3) { background:linear-gradient(135deg, oklch(0.985 0.018 245), oklch(0.95 0.04 250)); }
+
+/* Keep desktop navigation dropdowns mutually exclusive and above the header. */
+@media(min-width:1181px) {
+  .nav-group:hover .nav-dropdown,.nav-group:focus-within .nav-dropdown { display:none; }
+  .nav-group.is-open .nav-dropdown { display:block; z-index:60; }
+}
