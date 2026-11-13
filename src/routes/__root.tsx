@@ -113,6 +113,7 @@ function RootShell({ children }: { children: ReactNode }) {
       </head>
       <body>
         {children}
+        <script type="text/javascript" src="https://widget.1automations.com/widget/09b88f1d-0f87-4bbf-aedd-9c197dbf11a0.js"></script>
         <Scripts />
       </body>
     </html>
@@ -131,3 +132,4 @@ function RootComponent() {
     </QueryClientProvider>
   );
 }
+
